@@ -30,7 +30,7 @@ console.log(firstName);
  
 
 */
- //decelering variable in js
+/*//decelering variable in js
  //let ,const== ES6 ma aako  and var(old way)
 
  //let can be change later -->for emptylai pani let use garne
@@ -52,3 +52,62 @@ console.log(firstName);
 
  lastName ='lamichhane';
  console.log(lastName);
+*/
+/*
+ //basic operators in js
+
+ //mathmatical , assigiment , logical,  arithmetical
+ //mathmetical
+ const now = 2020;
+ const ageKusum = now - 1999;
+ const ageUnika = now - 1996;
+ console.log(ageKusum, ageUnika);
+ console.log(ageKusum*2,ageUnika/10);
+ 
+ 
+ //FOR PLUS OPERATORS[TO CONATINATE TWO VARIABLES]
+ const firstName='kusum';
+ const lastName='lamichhane';
+ console.log(firstName+' '+lastName);
+*/
+
+ //assignment operator
+ // is equal sign
+
+ let x = 10+6;
+ x += 10;
+ x*=4;
+ x++;
+ x--;
+ x--;
+ console.log(x);
+
+
+ //comprasion operators
+
+ const now = 2020;
+ const ageKusum = now - 1999;
+ const ageUnika = now - 1996;
+ console.log(ageKusum, ageUnika);
+
+ 
+
+ console.log(ageKusum> ageUnika);
+ console.log(ageKusum>=21);
+
+ const isFullAge = ageKusum 
+
+ //string templetes
+ const firstName ='jonas';
+ const job ='teacher';
+ const birthYear= 1999;
+ const year =2037;
+ const jonas ="I'm"+ firstName  + ' , a ' + (year-birthYear)+ 'years old' + job + '!';
+
+//templete string concept
+ console.log(jonas);
+ const jonasNew =` I'm ${firstName}`;
+ console.log(jonasNew);
+
+
+ 
