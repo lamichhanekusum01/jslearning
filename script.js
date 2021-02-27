@@ -73,7 +73,7 @@ console.log(firstName);
 
  //assignment operator
  // is equal sign
-
+/*
  let x = 10+6;
  x += 10;
  x*=4;
@@ -108,6 +108,8 @@ console.log(firstName);
  console.log(jonas);
  const jonasNew =` I'm ${firstName}`;
  console.log(jonasNew);
+*/ 
+
+console.log('this is a " \n\ "multiple " \n\   line ');
 
 
- 
