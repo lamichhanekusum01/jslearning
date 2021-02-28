@@ -109,7 +109,8 @@ console.log(firstName);
  const jonasNew =` I'm ${firstName}`;
  console.log(jonasNew);
 */ 
-
+/*
+//MULTIPLE LINE
 console.log('this is a " \n\ "multiple " \n\   line ');
-
+*/
 
