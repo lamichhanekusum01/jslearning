@@ -116,7 +116,7 @@ console.log('this is a " \n\ "multiple " \n\   line ');
 
 //IF ELSE
 const age=16;
- 
+ /*
  
 if (age>=18) {
   console.log('unika can have driving license');
@@ -144,3 +144,23 @@ else{
 
 }
 console.log(century);
+*/
+
+//coding challange
+
+const massMark=78;
+const heightMark =1.188;
+const massJohn=85;
+const heightJohn =1.76;
+
+const BMIMark = massMark/heightMark**2;
+const BMIJohn =massJohn/(heightJohn *  heightJohn);
+console.log(BMIMark,BMIJohn);
+
+if (BMIMark>BMIJohn) {
+  console.log("mark's bmi is heigher tan john's !")
+}
+else{
+  console.log("john's BMI is heigher than John's !")
+}
+  
