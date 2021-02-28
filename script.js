@@ -114,3 +114,33 @@ console.log(firstName);
 console.log('this is a " \n\ "multiple " \n\   line ');
 */
 
+//IF ELSE
+const age=16;
+ 
+ 
+if (age>=18) {
+  console.log('unika can have driving license');
+
+  
+}
+else
+{
+  const yearsLeft =18-age;
+
+  console.log(`unika can have driving license , go ahead in ${yearsLeft}  years `);
+}
+
+/n/
+
+const birthYear=1991;
+let century;
+if (birthYear<=2000){
+
+
+century =20;
+}
+else{
+   century =21;
+
+}
+console.log(century);
