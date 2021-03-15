@@ -147,7 +147,7 @@ console.log(century);
 */
 
 //coding challange
-
+/*
 const massMark=78;
 const heightMark =1.188;
 const massJohn=85;
@@ -158,9 +158,27 @@ const BMIJohn =massJohn/(heightJohn *  heightJohn);
 console.log(BMIMark,BMIJohn);
 
 if (BMIMark>BMIJohn) {
-  console.log("mark's bmi is heigher tan john's !")
+  console.log("mark's bmi is heigher tan john's !");
 }
 else{
-  console.log("john's BMI is heigher than John's !")
+  console.log("john's BMI is heigher than John's !");
 }
-  
+*/
+// 5 falsy value :0,'',undefined,null,Nan
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+
+  const money = 0
+  if(money){
+    console.log("dont spend it all");
+
+  }
+  else{
+    console.log('you shoud get a job');
+  }
+
