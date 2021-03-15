@@ -115,7 +115,7 @@ console.log('this is a " \n\ "multiple " \n\   line ');
 */
 
 //IF ELSE
-const age=16;
+//const age=16;
  /*
  
 if (age>=18) {
@@ -158,27 +158,36 @@ const BMIJohn =massJohn/(heightJohn *  heightJohn);
 console.log(BMIMark,BMIJohn);
 
 if (BMIMark>BMIJohn) {
-  console.log("mark's bmi is heigher tan john's !");
+  console.log("mark's bmi is heigher tan john's !")
 }
 else{
-  console.log("john's BMI is heigher than John's !");
+  console.log("john's BMI is heigher than John's !")
 }
 */
-// 5 falsy value :0,'',undefined,null,Nan
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean('Jonas'));
-console.log(Boolean({}));
-console.log(Boolean(''));
+  //eqaulity operators
 
+  
+  /*  const age = 18;
+  if (age ===18)
+  console.log("you just become an adult(strict)");
+  if (age ==18)
+  console.log("you just become an adult(loose)");
+  
+  const favroite = Number(prompt("what is your favrioute number"));
+  console.log(favroite);
+  console.log(typeof favroite);
+  if(favroite===23)
+  {
+    console.log('cool! 23 is an amazing number');
 
-  const money = 0
-  if(money){
-    console.log("dont spend it all");
+  }
+  else if(favroite===7){
+      console.log("7 is also an amazing number ");
 
   }
   else{
-    console.log('you shoud get a job');
+    console.log("both are not either 7or 23");
   }
-
+  */
+ 
