@@ -190,4 +190,26 @@ else{
     console.log("both are not either 7or 23");
   }
   */
- 
+ //BOOLEAN LOGIC
+
+ /* and ->  true ,false false ,false
+ or-> true, true , true , false
+ */
+//LOGICAL
+const hasDriverLicense = true;
+const hasGoodVision = true;
+console.log(hasGoodVision
+  ||  hasDriverLicense);
+console.log(hasDriverLicense && hasGoodVision);
+console.log(!hasDriverLicense );
+
+
+const isTired = true ;
+console.log(hasDriverLicense && hasGoodVision && isTired);
+if (hasDriverLicense && hasGoodVision && isTired)
+{
+  console.log ("sarah is able to drive !");
+}
+else{
+  console.log("someone else should drive ");
+}
