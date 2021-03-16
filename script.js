@@ -196,7 +196,7 @@ else{
  or-> true, true , true , false
  */
 //LOGICAL
-const hasDriverLicense = true;
+/* const hasDriverLicense = true;
 const hasGoodVision = true;
 console.log(hasGoodVision
   ||  hasDriverLicense);
@@ -212,4 +212,28 @@ if (hasDriverLicense && hasGoodVision && isTired)
 }
 else{
   console.log("someone else should drive ");
-}
+} */
+
+
+//CODING CHALLAGEE
+  const dolphine = 96 + 108 + 89 ;
+   const koalas = 88 + 91 + 110 ;
+   const averagedolphine =(dolphine)/3 ;
+    const averagekoalas =(koalas)/3 ;
+   console.log( "the average score  of team dolphine is " + averagedolphine);
+   
+   console.log( "the average score  of team koalas is " + averagekoalas);
+{
+   if (averagedolphine > averagekoalas){
+     console.log("winner team is dolphine with average score with" + averagedolphine );
+   }
+         else if (averagekoalas>averagedolphine)
+         {
+          console.log("winner team is koalas with average score with" + averagekoalas );
+     }
+    else if ( averagedolphine === averagekoalas )
+     {
+       console.log(" the match is draw ");
+      }
+    }
+   
