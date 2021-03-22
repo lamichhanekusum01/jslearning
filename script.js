@@ -243,7 +243,7 @@ switch (day) {
     console.log('plan course structure');
 
     console.log('go to coding meeting');
-    //break;
+  //break;
 
   case 'tuesday':
     console.log('prepare theory videoes');
@@ -261,4 +261,31 @@ switch (day) {
   default:
 
     console.log('Not valid day ');
+}
+
+
+
+//challange
+
+if (day === 'monday') {
+  console.log('plan course structure');
+
+  console.log('go to coding meeting');
+}
+else if (day === 'tuesday') {
+  console.log('prepare theory videoes');
+
+}
+else if (day === 'wednesday' || day === 'thursday') {
+  console.log('prepare praclical videoes');
+}
+else if (day === 'friday' || day === 'saturday')
+{
+  console.log(' videoes');
+}
+else if (day === 'sunday') {
+  console.log('dsjdga');
+}
+else {
+  console.log('none');
 }
