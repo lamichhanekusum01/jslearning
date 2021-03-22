@@ -264,7 +264,7 @@ switch (day) {
 }
 
 
-
+/* 
 //challange
 
 if (day === 'monday') {
@@ -288,4 +288,17 @@ else if (day === 'sunday') {
 }
 else {
   console.log('none');
+}
+
+ */
+
+//TERNARY OPERATOR
+
+/* const age =2;
+age>=18 ? console.log("you should drink wine"): 
+console.log("DRINK WATER");  */
+const age=23;
+const drink =  age >=18 ? 'wine' : 'water'
+{
+  console.log(drink);
 }
