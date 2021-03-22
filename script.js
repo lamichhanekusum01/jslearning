@@ -71,8 +71,8 @@ console.log(firstName);
  console.log(firstName+' '+lastName);
 */
 
- //assignment operator
- // is equal sign
+//assignment operator
+// is equal sign
 /*
  let x = 10+6;
  x += 10;
@@ -108,7 +108,7 @@ console.log(firstName);
  console.log(jonas);
  const jonasNew =` I'm ${firstName}`;
  console.log(jonasNew);
-*/ 
+*/
 /*
 //MULTIPLE LINE
 console.log('this is a " \n\ "multiple " \n\   line ');
@@ -116,18 +116,18 @@ console.log('this is a " \n\ "multiple " \n\   line ');
 
 //IF ELSE
 //const age=16;
- /*
+/*
  
 if (age>=18) {
-  console.log('unika can have driving license');
+ console.log('unika can have driving license');
 
-  
+ 
 }
 else
 {
-  const yearsLeft =18-age;
+ const yearsLeft =18-age;
 
-  console.log(`unika can have driving license , go ahead in ${yearsLeft}  years `);
+ console.log(`unika can have driving license , go ahead in ${yearsLeft}  years `);
 }
 
 /n/
@@ -140,7 +140,7 @@ if (birthYear<=2000){
 century =20;
 }
 else{
-   century =21;
+  century =21;
 
 }
 console.log(century);
@@ -165,36 +165,36 @@ else{
 }
 */
 
-  //eqaulity operators
+//eqaulity operators
 
-  
-  /*  const age = 18;
-  if (age ===18)
-  console.log("you just become an adult(strict)");
-  if (age ==18)
-  console.log("you just become an adult(loose)");
-  
-  const favroite = Number(prompt("what is your favrioute number"));
-  console.log(favroite);
-  console.log(typeof favroite);
-  if(favroite===23)
-  {
-    console.log('cool! 23 is an amazing number');
 
-  }
-  else if(favroite===7){
-      console.log("7 is also an amazing number ");
+/*  const age = 18;
+if (age ===18)
+console.log("you just become an adult(strict)");
+if (age ==18)
+console.log("you just become an adult(loose)");
+ 
+const favroite = Number(prompt("what is your favrioute number"));
+console.log(favroite);
+console.log(typeof favroite);
+if(favroite===23)
+{
+  console.log('cool! 23 is an amazing number');
 
-  }
-  else{
-    console.log("both are not either 7or 23");
-  }
-  */
- //BOOLEAN LOGIC
+}
+else if(favroite===7){
+    console.log("7 is also an amazing number ");
 
- /* and ->  true ,false false ,false
- or-> true, true , true , false
- */
+}
+else{
+  console.log("both are not either 7or 23");
+}
+*/
+//BOOLEAN LOGIC
+
+/* and ->  true ,false false ,false
+or-> true, true , true , false
+*/
 //LOGICAL
 /* const hasDriverLicense = true;
 const hasGoodVision = true;
@@ -216,24 +216,49 @@ else{
 
 
 //CODING CHALLAGEE
-  const dolphine = 96 + 108 + 89 ;
-   const koalas = 88 + 91 + 110 ;
-   const averagedolphine =(dolphine)/3 ;
-    const averagekoalas =(koalas)/3 ;
-   console.log( "the average score  of team dolphine is " + averagedolphine);
-   
-   console.log( "the average score  of team koalas is " + averagekoalas);
+/* const dolphine = 96 + 108 + 89 ;
+ const koalas = 88 + 91 + 110 ;
+ const averagedolphine =(dolphine)/3 ;
+  const averagekoalas =(koalas)/3 ;
+ console.log( "the average score  of team dolphine is " + averagedolphine);
+ 
+ console.log( "the average score  of team koalas is " + averagekoalas);
 {
-   if (averagedolphine > averagekoalas){
-     console.log("winner team is dolphine with average score with" + averagedolphine );
+ if (averagedolphine > averagekoalas){
+   console.log("winner team is dolphine with average score with" + averagedolphine );
+ }
+       else if (averagekoalas>averagedolphine)
+       {
+        console.log("winner team is koalas with average score with" + averagekoalas );
    }
-         else if (averagekoalas>averagedolphine)
-         {
-          console.log("winner team is koalas with average score with" + averagekoalas );
-     }
-    else if ( averagedolphine === averagekoalas )
-     {
-       console.log(" the match is draw ");
-      }
+  else if ( averagedolphine === averagekoalas )
+   {
+     console.log(" the match is draw ");
     }
-   
+  } */
+//SWITCH STATEMENTS
+const day = 'wednesday';
+switch (day) {
+  case 'monday':
+    console.log('plan course structure');
+
+    console.log('go to coding meeting');
+    //break;
+
+  case 'tuesday':
+    console.log('prepare theory videoes');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples');
+  case 'friday':
+
+    console.log('record videoes');
+  case 'saturday':
+  case 'sunday':
+    console.log('enjoy weekend');
+    break;
+  default:
+
+    console.log('Not valid day ');
+}
