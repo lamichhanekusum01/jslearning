@@ -237,7 +237,7 @@ else{
     }
   } */
 //SWITCH STATEMENTS
-const day = 'wednesday';
+/* const day = 'wednesday';
 switch (day) {
   case 'monday':
     console.log('plan course structure');
@@ -262,7 +262,7 @@ switch (day) {
 
     console.log('Not valid day ');
 }
-
+ */
 
 /* 
 //challange
@@ -291,14 +291,19 @@ else {
 }
 
  */
-
+/* 
 //TERNARY OPERATOR
 
 /* const age =2;
 age>=18 ? console.log("you should drink wine"): 
 console.log("DRINK WATER");  */
-const age=23;
+/* const age=23;
 const drink =  age >=18 ? 'wine' : 'water'
 {
   console.log(drink);
-}
+} 
+ */
+
+const billamt=275;
+ const tip = billamt<=300 && billamt>50 ? billamt*0.15 : billamt*0.2;
+ console.log(`the bill was ${billamt},the tip was ${tip},and total amount is ${billamt +tip}`);
