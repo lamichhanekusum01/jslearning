@@ -23,7 +23,7 @@ console.log(FirstJuice);
 const SecondJuice = fruitJuice(5,8);
 console.log(SecondJuice); */
 
-
+/* 
 
 //function decleration
 function calcAge1(birthYear)
@@ -39,4 +39,18 @@ const calcAge2 =function (birthYear)
     return 2037-birthYear;
 }
 const age2 =calcAge2(1998); 
-console.log(age1,age2);
+console.log(age1,age2); */
+
+//ARROW FUNCTION
+ const calcAge3 = birthYear => 2021-birthYear;
+ const age3 = calcAge3(1999);
+ console.log(age3);
+
+ const yearUntileRetirement = (birthYear,firstName) => {
+     const age =2037 -birthYear;
+     const retirement =65 -age;
+     return `${firstName} retires in ${retirement} years`;
+
+ }
+ console.log(yearUntileRetirement(1999, 'kusum'));
+ console.log(yearUntileRetirement(2005, 'hardik'));
