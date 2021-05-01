@@ -41,7 +41,7 @@ const calcAge2 =function (birthYear)
 const age2 =calcAge2(1998); 
 console.log(age1,age2); */
 
-//ARROW FUNCTION
+/* //ARROW FUNCTION
  const calcAge3 = birthYear => 2021-birthYear;
  const age3 = calcAge3(1999);
  console.log(age3);
@@ -53,4 +53,18 @@ console.log(age1,age2); */
 
  }
  console.log(yearUntileRetirement(1999, 'kusum'));
- console.log(yearUntileRetirement(2005, 'hardik'));
+ console.log(yearUntileRetirement(2005, 'hardik')); */
+ function cutfruitPieces(fruit)
+ {
+     return fruit * 4;
+ }
+ function fruitProcessor (apples,oranges)
+ {
+     const applePieces = cutfruitPieces(apples);
+     const orangePieces = cutfruitPieces(oranges);
+     const juice = `juice with ${applePieces}  apples and ${orangePieces} oranges.`;
+     return juice;
+     
+
+ }
+ console.log(fruitProcessor(2,3));
