@@ -115,7 +115,7 @@ checkWinner(scoreDolphine,scoreKolas );
  */
 
 
-//ARRAY
+/* //ARRAY
 const friends =['kusum', 'joshna','preety'];
 console.log(friends);
 console.log(friends[0]);
@@ -141,4 +141,34 @@ const age3 =calcAge(years[years.length-1]);
 console.log(age1,age2,age3);
 
 const ages = [calcAge(years[0]),calcAge(years[1]), calcAge(years[years.length-1])];
-console.log(ages);
+console.log(ages); */
+
+const friends =['kusum','joshna','peter'];
+//ADD ELEMENT
+const newLength =friends.push('utsav');
+
+console.log(friends);
+console.log(newLength);
+friends.unshift('kusum');
+console.log(friends);
+//REMOVE THE ELEMENTS
+friends.pop();
+const popped =friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('kusum'));
+console.log(friends.indexOf('joshna'));
+
+console.log(friends.includes('kusum'));
+console.log(friends.includes('unika'));
+if (friends.includes('unika'))
+{
+    console.log('you have a friend called kusum');
+}
+else{
+    console.log('you dont have any friend named so ');
+}
