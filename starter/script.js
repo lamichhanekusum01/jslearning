@@ -91,7 +91,7 @@ else
  
 }
 console.log(yearUntilRetirement( 1999)); */
-//CODINGCHALLANGE
+/* //CODINGCHALLANGE
 
 const calcAverage = (a, b, c) => (a + b + c) / 3
 const scoreDolphine = calcAverage(44, 23, 71);
@@ -110,3 +110,35 @@ const checkWinner = function (avgDolphine, avgKoalas) {
     }
 }
 checkWinner(scoreDolphine,scoreKolas );
+
+
+ */
+
+
+//ARRAY
+const friends =['kusum', 'joshna','preety'];
+console.log(friends);
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length-1]);
+friends[2]='hareram';
+console.log(friends);
+
+firstName ='kusum';
+const myDetails = [firstName ,'lamichhane',2021-1999,friends];
+console.log(myDetails);
+
+
+const calcAge = function (birthYear)
+{
+    return 2021 - birthYear;
+}
+const years =[1997,1998,1957,1965];
+const age1 = calcAge(years[0]);
+const age2 =calcAge(years[1]);
+const age3 =calcAge(years[years.length-1]);
+console.log(age1,age2,age3);
+
+const ages = [calcAge(years[0]),calcAge(years[1]), calcAge(years[years.length-1])];
+console.log(ages);
