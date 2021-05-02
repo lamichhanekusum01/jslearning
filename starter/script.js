@@ -46,7 +46,7 @@ console.log(age1,age2); */
  const age3 = calcAge3(1999);
  console.log(age3);
 
- const yearUntileRetirement = (birthYear,firstName) => {
+ /* const yearUntileRetirement = (birthYear,firstName) => {
      const age =2037 -birthYear;
      const retirement =65 -age;
      return `${firstName} retires in ${retirement} years`;
@@ -54,7 +54,7 @@ console.log(age1,age2); */
  }
  console.log(yearUntileRetirement(1999, 'kusum'));
  console.log(yearUntileRetirement(2005, 'hardik')); */
- function cutfruitPieces(fruit)
+ /* function cutfruitPieces(fruit)
  {
      return fruit * 4;
  }
@@ -68,3 +68,26 @@ console.log(age1,age2); */
 
  }
  console.log(fruitProcessor(2,3));
+ */
+
+ const calcAge =function(birthYear)
+ {
+     return 2021-birthYear;
+ }
+
+ const yearUntilRetirement = function(birthYear,firstName)  {
+    const age =calcAge(birthYear);
+    const retirement =65 -age;
+    if(retirement >0) 
+    {
+        console.log ( `${firstName} retires in ${retirement} years`); 
+return retirement;
+}
+else
+{
+    return -1;
+} 
+    // return `${firstName} retires in ${retirement} years`;
+ 
+}
+console.log(yearUntilRetirement( 1999));
