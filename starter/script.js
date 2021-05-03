@@ -142,7 +142,7 @@ console.log(age1,age2,age3);
 
 const ages = [calcAge(years[0]),calcAge(years[1]), calcAge(years[years.length-1])];
 console.log(ages); */
-
+/* 
 const friends =['kusum','joshna','peter'];
 //ADD ELEMENT
 const newLength =friends.push('utsav');
@@ -171,4 +171,18 @@ if (friends.includes('unika'))
 }
 else{
     console.log('you dont have any friend named so ');
+} */
+
+//coding challange
+
+const calcTip =function (billAmount)
+{
+    return billAmount >=50 && billAmount<=300 ?billAmount * 0.15 :billAmount*0.2;
 }
+
+const billAmount =[125,555,44];
+const tip =[calcTip(billAmount[0]),calcTip(billAmount[1]),calcTip(billAmount[2])];
+console.log(billAmount,tip);
+
+const total = [billAmount[0]+tip[0],billAmount[1] + tip[1] ,billAmount[2] + tip[2] ];
+console.log(total);
