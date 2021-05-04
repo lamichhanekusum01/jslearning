@@ -206,27 +206,56 @@ console.log(kusum['lastName']);
 const nameKey ='Name';
 console.log(kusum['first'+nameKey]);
 console.log(kusum['last'+nameKey]);
- */
+ *//* 
 const kusum ={
-    firstName: 'kusum',
-    lastName :'lamichhane',
-    birthYear:2055,
-    job: 'developer',
-    friends:['kusum','joshna','preety'],
-    hasDriversLicense:true,
-       calcAge: function() 
+   firstName: 'kusum',
+   lastName :'lamichhane',
+   birthYear:2055,
+   job: 'developer',
+   friends:['kusum','joshna','preety'],
+   hasDriversLicense:true,
+      calcAge: function() 
 {
-    this.age = 2078-this.birthYear;
-    return this.age;
+   this.age = 2078-this.birthYear;
+   return this.age;
 },
 getSummary:function()
 {
-    return ` ${this.firstName} is a ${this.calcAge()} years old , and he has ${this.hasDriversLicense? 'a': 'no'} drivers licences`
+   return ` ${this.firstName} is a ${this.calcAge()} years old , and he has ${this.hasDriversLicense? 'a': 'no'} drivers licences`
 }
 };
 
 console.log(kusum.calcAge());
 console.log(kusum.age);
 
-console.log(kusum.getSummary());
+console.log(kusum.getSummary()); */
+//coding challange
+const mark = {
+    fullName: 'mark miller',
+    mass:78,
+    height: 169,
+    calcBMI: function () {
+        this.Bmimark = mark.mass / (mark.height * mark.height);
+        return this.Bmimark;
+    }
+};
+const john = {
+    fullName: 'john smith',
+    mass: 92,
+    height: 195,
+    calcBMI: function () {
+        this.Bmijohn = john.mass / (john.height * john.height);
+        return this.Bmijohn;
+    }
+};
+
+ console.log(mark.calcBMI());
+
+if(this.Bmimark>this.Bmijohn)
+{
+    console.log(`${mark.fullName} has bmi of ${mark.calcBMI()} is higher than ${john.fullName} bmi of ${john.calcBMI()}`);
+}
+else{
+   console.log(`${john.fullName} has bmi of ${john.calcBMI()} is higher than ${mark.fullName} bmi of ${mark.calcBMI()}` );
+};
 
