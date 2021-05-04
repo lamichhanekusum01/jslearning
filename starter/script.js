@@ -172,7 +172,7 @@ if (friends.includes('unika'))
 else{
     console.log('you dont have any friend named so ');
 } */
-
+/* 
 //coding challange
 
 const calcTip =function (billAmount)
@@ -185,4 +185,48 @@ const tip =[calcTip(billAmount[0]),calcTip(billAmount[1]),calcTip(billAmount[2])
 console.log(billAmount,tip);
 
 const total = [billAmount[0]+tip[0],billAmount[1] + tip[1] ,billAmount[2] + tip[2] ];
-console.log(total);
+console.log(total); */
+/* 
+//OBJECT
+  
+
+const kusum ={
+    firstName: 'kusum',
+    lastName :'lamichhane',
+    age:2078-2055,
+    job: 'developer',
+    friends:['kusum','joshna','preety']
+
+};
+console.log(kusum);
+console.log(kusum.lastName);
+//bracketsnotation
+console.log(kusum['lastName']);
+
+const nameKey ='Name';
+console.log(kusum['first'+nameKey]);
+console.log(kusum['last'+nameKey]);
+ */
+const kusum ={
+    firstName: 'kusum',
+    lastName :'lamichhane',
+    birthYear:2055,
+    job: 'developer',
+    friends:['kusum','joshna','preety'],
+    hasDriversLicense:true,
+       calcAge: function() 
+{
+    this.age = 2078-this.birthYear;
+    return this.age;
+},
+getSummary:function()
+{
+    return ` ${this.firstName} is a ${this.calcAge()} years old , and he has ${this.hasDriversLicense? 'a': 'no'} drivers licences`
+}
+};
+
+console.log(kusum.calcAge());
+console.log(kusum.age);
+
+console.log(kusum.getSummary());
+
