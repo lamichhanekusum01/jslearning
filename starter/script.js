@@ -259,7 +259,7 @@ else{
    console.log(`${john.fullName} has bmi of ${john.calcBMI()} is higher than ${mark.fullName} bmi of ${mark.calcBMI()}` );
 };
  */
-
+/* 
 
 for (let rep =1; rep <= 10; rep++)
 {
@@ -293,4 +293,28 @@ for (let i=0; i<kusu.length;i++)
 {
     if (typeof kusu[i]!=='string') continue;
     console.log(jonas[i],typeof jonas[i]);
+} */
+//BACKWARD PRINTING OF LETTER
+const kusum =[
+    'kusum',
+    'lamichhane',
+    2078-2055,
+    'teacher',
+    ['kusum','lamichhane','mulpani'],
+    true,
+];
+
+for(let i =kusum.length-1;i>=0;i--)
+{
+    console.log(i,kusum[i]);
 }
+for(let exercise =1; exercise<8 ;exercise++)
+{
+    console.log(`---------starting exercise ${exercise}`);
+
+for(let rep =1; rep<5;rep++)
+{
+    console.log(`lifting weight repetation ${rep}`);
+
+}
+};
