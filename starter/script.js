@@ -229,7 +229,7 @@ console.log(kusum.calcAge());
 console.log(kusum.age);
 
 console.log(kusum.getSummary()); */
-//coding challange
+/* //coding challange
 const mark = {
     fullName: 'mark miller',
     mass:78,
@@ -258,4 +258,39 @@ if(this.Bmimark>this.Bmijohn)
 else{
    console.log(`${john.fullName} has bmi of ${john.calcBMI()} is higher than ${mark.fullName} bmi of ${mark.calcBMI()}` );
 };
+ */
 
+
+for (let rep =1; rep <= 10; rep++)
+{
+    console.log(`i do gym ${rep} times a day ` );
+}
+
+const jonas =[
+    'kusum',
+    'lamichhane',
+    2078-2055,
+    'teacher',
+    ['kusum','lamichhane','mulpani'],
+    true,
+];
+const kusu =[];
+for(let i =0 ; i<jonas.length ; i++)
+{
+    console.log(jonas[i]);
+    kusu[i]=typeof kusu[i];
+}
+console.log(kusu);
+const years =[1991,2007,1969,2020];
+const ages =[];
+for(let i=0;i<years.length;i++)
+{
+    ages.push(2037-years[i]);
+}
+console.log(ages);
+//continue and break
+for (let i=0; i<kusu.length;i++)
+{
+    if (typeof kusu[i]!=='string') continue;
+    console.log(jonas[i],typeof jonas[i]);
+}
