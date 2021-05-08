@@ -294,7 +294,7 @@ for (let i=0; i<kusu.length;i++)
     if (typeof kusu[i]!=='string') continue;
     console.log(jonas[i],typeof jonas[i]);
 } */
-//BACKWARD PRINTING OF LETTER
+/* //BACKWARD PRINTING OF LETTER
 const kusum =[
     'kusum',
     'lamichhane',
@@ -317,4 +317,59 @@ for(let rep =1; rep<5;rep++)
     console.log(`lifting weight repetation ${rep}`);
 
 }
-};
+}; */
+for(let rep =1; rep<5;rep++)
+{
+    console.log(`lifting weight repetation ${rep}`);
+}
+let rep=1;
+while(rep<5)
+{
+    console.log(`i am from while loop ${rep}`);
+    rep++
+}
+
+//dice example for while loop
+
+let dice = Math.trunc(Math.random()*6)+1;
+while(dice!=6)
+{
+    console.log(`you rolled a ${dice}`);
+     dice =Math.trunc(Math.random()*6)+1;
+       if(dice==6)console.log('loop ends here');
+    }
+
+
+    //coding challange
+
+
+    const calcTip =function (billAmount)
+{
+    return billAmount >=50 && billAmount<=300 ?billAmount * 0.15 :billAmount*0.2;
+}
+const billAmount =[22,295,176,440,37,105,10,1100,86,52];
+const tips=[];
+const totals=[];
+/* const tip =[calcTip(billAmount[0]),calcTip(billAmount[1]),calcTip(billAmount[2])];
+console.log(billAmount,tip); */
+for(let i=0;i<billAmount.length;i++ )
+{
+    const tip= calcTip(billAmount[i]);
+    tips.push(tip);
+    totals.push(tip +billAmount[i]);
+}
+//const total = [billAmount[0]+tip[0],billAmount[1] + tip[1] ,billAmount[2] + tip[2] ];
+console.log(billAmount,tips,totals);
+
+const calcAverage =function(arr)
+{
+    let sum =0;
+    for(let i=0;i<arr.length;i++)
+    {
+sum +=arr[i];
+    }
+    return sum/arr.length;
+}
+console.log(calcAverage([2,3,4]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
