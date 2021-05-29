@@ -26,7 +26,7 @@ const init = function () {
   player0EL.classList.remove('player--winner');
   player1EL.classList.remove('player--winner');
   current0El.classList.add('player--active');
-  current1El.classList.remove('player--active');
+  current1El  .classList.remove('player--active');
 };
 init();
 const switchPlayer = function () {
