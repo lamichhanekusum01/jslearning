@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 // Data needed for a later exercise
 const flights =
   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
@@ -84,3 +84,10 @@ const nested = [2, 4, [5, 6]];
 // console.log(i, j);
 const [i, , [j, k]] = nested;
 console.log(i, j, k); */
+
+const arr = [2, 3, 4];
+const newArray = [1, 5, 7, ...arr];
+console.log(newArray);
+
+const newArr = [...arr, '5', '6'];
+console.log(newArr);
