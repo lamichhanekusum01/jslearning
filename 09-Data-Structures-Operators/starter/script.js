@@ -1,11 +1,11 @@
 'use strict';
-/*
+
 // Data needed for a later exercise
-const flights =
-  '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+//const flights =
+// '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
 // Data needed for first part of the section
-const restaurant =0`{
+const restaurant = {
   name: 'Classico Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
@@ -36,6 +36,10 @@ const restaurant =0`{
   orderDelivery: function ({ time, address, mainIndex, starterIndex }) {
     console.log(`
       order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`);
+  },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Here is your delicious pasta made of ${ing1},${ing2},${ing3}`);
   },
 };
 restaurant.orderDelivery({
@@ -91,3 +95,22 @@ console.log(newArray);
 
 const newArr = [...arr, '5', '6'];
 console.log(newArr);
+const NewMenu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(NewMenu);
+
+//iterables
+const str = 'kusum';
+const letters = [...str, ' ', 'm.'];
+console.log(letters);
+
+const ingredients = [
+  prompt('ingredient 1'),
+  prompt('ingredient 2'),
+  prompt('ingredient 3 '),
+];
+console.log(ingredients);
+restaurant.orderPasta[(ingredients[0], ingredients[1], ingredients[2])];
+restaurant.orderPasta(...ingredients);
+//objects
+const newResturant = { foundeIN: 1999, ...resturant, funder: 'kusum' };
+console.log(newResturant);
