@@ -41,6 +41,10 @@ const restaurant = {
   orderPasta: function (ing1, ing2, ing3) {
     console.log(`Here is your delicious pasta made of ${ing1},${ing2},${ing3}`);
   },
+  orderPizza: function (mainIngredients, ...otherIngridents) {
+    console.log(mainIngredients);
+    console.log(otherIngridents);
+  },
 };
 restaurant.orderDelivery({
   time: '11.06PM',
@@ -104,9 +108,9 @@ const letters = [...str, ' ', 'm.'];
 console.log(letters);
 
 const ingredients = [
-  prompt('ingredient 1'),
-  prompt('ingredient 2'),
-  prompt('ingredient 3 '),
+  //prompt('ingredient 1'),
+  //prompt('ingredient 2'),
+  //prompt('ingredient 3 '),
 ];
 console.log(ingredients);
 restaurant.orderPasta[(ingredients[0], ingredients[1], ingredients[2])];
@@ -123,3 +127,37 @@ const [pizza, , risotto, ...otherFood] = [
   ...restaurant.starterMenu,
 ];
 console.log(pizza, risotto, otherFood);
+//FUNCTIONS
+const add = function (...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+  console.log(sum);
+};
+add(2, 3);
+add(2, 6, 3);
+add(2, 6, 9, 3);
+const x = [25, 256, 32];
+add(...x);
+
+restaurant.orderPizza('mushroom', 'spanich', 'mucur');
+restaurant.orderPizza('mushroom');
+//short circuting
+//use any data types , return any datta type
+console.log(3 || 'jonas');
+console.log('' || 'jonas');
+console.log(true || 0);
+console.log(undefined || 'null');
+console.log(undefined || 0 || '' || 'hello' || 23);
+restaurant.numGuest = 0;
+const guess1 = restaurant.numGuest ? restaurant.numGuest : 1;
+console.log(guess1);
+const guests2 = restaurant.numGuest || 10;
+console.log(guests2);
+console.log('........AND.........');
+console.log(0 && 'kusum');
+console.log('hello' && 23 && null && 'kusum');
+console.log(7 && 'kusum');
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushroom', 'salad');
+}
+restaurant.orderPizza && restaurant.orderPizza('mushroom', 'salad');
