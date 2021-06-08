@@ -114,3 +114,12 @@ restaurant.orderPasta(...ingredients);
 //objects
 const newResturant = { foundeIN: 1999, ...resturant, funder: 'kusum' };
 console.log(newResturant);
+//REST PATTERN
+const array = [1, 2, ...[4, 5]];
+const [d, e, ...others] = [1, 2, 3, 4, 5];
+console.log(d, e, others);
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log(pizza, risotto, otherFood);
