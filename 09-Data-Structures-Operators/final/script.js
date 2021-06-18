@@ -47,8 +47,12 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+const Menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+for (const item of Menu) console.log(item);
+for (const item of Menu.entries()) {
+console.log(`${item[0]+1}: ${item[1]`});
 
-/*
+/* /*  
 ///////////////////////////////////////
 // String Methods Practice
 
@@ -59,12 +63,12 @@ const flights =
 //              Arrival from BRU to FAO (11h45)
 //   🔴 Delayed Arrival from HEL to FAO (12h05)
 //            Departure from FAO to LIS (12h30)
-
+/* 
 const getCode = str => str.slice(0, 3).toUpperCase();
 
 for (const flight of flights.split('+')) {
   const [type, from, to, time] = flight.split(';');
-  const output = `${type.startsWith('_Delayed') ? '🔴' : ''}${type.replaceAll(
+  const output =(`${type.startsWith('_Delayed') ? '🔴' : ''}${type.replaceAll(
     '_',
     ' '
   )} ${getCode(from)} ${getCode(to)} (${time.replace(':', 'h')})`.padStart(36);
@@ -121,10 +125,10 @@ document.querySelector('button').addEventListener('click', function () {
     )}`;
     console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
   }
-});
-*/
+});/* 
+*/ */
 
-/*
+/*zzzzzzzzzz
 ///////////////////////////////////////
 // Working With Strings - Part 2
 
@@ -172,7 +176,7 @@ console.log(message2.repeat(5));
 
 const planesInLine = function (n) {
   console.log(`There are ${n} planes in line ${'🛩'.repeat(n)}`);
-};
+}; */
 planesInLine(5);
 planesInLine(3);
 planesInLine(12);
@@ -322,14 +326,14 @@ console.log(events);
 gameEvents.delete(64);
 
 // 3.
-console.log(
+/* console.log(
   `An event happened, on average, every ${90 / gameEvents.size} minutes`
 );
 const time = [...gameEvents.keys()].pop();
 console.log(time);
 console.log(
   `An event happened, on average, every ${time / gameEvents.size} minutes`
-);
+); */
 
 // 4.
 for (const [min, event] of gameEvents) {
@@ -885,3 +889,4 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
 */
+ 
