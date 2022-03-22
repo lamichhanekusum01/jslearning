@@ -75,3 +75,33 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundColor = 'black';
   document.querySelector('.number').style.width = '30rem';
 });
+// //Working with strings
+
+// const airline ='TIA of red egg';
+// const names ='A89a'
+// console.log(names[0]);
+// console.log(names[3]);
+// console.log('Anksa'.length);
+// console.log(airline.length);
+// //string methods
+// console.log(airline.indexOf('e'));
+// console.log(airline.lastIndexOf('e'));
+
+// console.log(airline.slice(4));
+// console.log(airline.slice(1,-4));
+
+// //check middle seat
+//  const checkMiddleSeat = function(seat)
+//  {//B and e are middle seat 
+//    const s=seat.slice(-1)
+//    if(s=='B'|| s==='E')
+//    console.log('you got the middle seat');
+//    else console.log('you got lucky')
+
+//  }
+// checkMiddleSeat('11B');
+// checkMiddleSeat('23C');
+// checkMiddleSeat('3E');
+// console.log(new String ('jonas'));
+// console.log(typeof new String ('jonas'));
+// console.log(typeof new String ('jonas').slice(-1));
